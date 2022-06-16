@@ -13,15 +13,16 @@ public class EsTestIndexCreate {
 
 
     public static void main(String[] args) throws IOException {
-        RestHighLevelClient restHighLevelClient =new RestHighLevelClient(
-                RestClient.builder(new HttpHost("192.168.30.133",9200,"http"))
+        RestHighLevelClient restHighLevelClient = new RestHighLevelClient(
+                RestClient.builder(new HttpHost("192.168.30.133", 9200, "http"))
         );
         // 创建索引
-        CreateIndexRequest createIndexRequest = new CreateIndexRequest("user");
-         CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(createIndexRequest, RequestOptions.DEFAULT);
+        CreateIndexRequest createIndexRequest = new CreateIndexRequest("user1");
+        CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(createIndexRequest, RequestOptions.DEFAULT);
 
 
-        System.out.println("索引操作状态" +createIndexResponse.isAcknowledged());
+
+        System.out.println("索引操作状态" + createIndexResponse.isAcknowledged());
 
         restHighLevelClient.close();
 
