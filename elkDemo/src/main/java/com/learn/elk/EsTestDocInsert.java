@@ -14,6 +14,7 @@ import org.elasticsearch.client.indices.GetIndexResponse;
 import org.elasticsearch.common.xcontent.XContentType;
 
 import java.io.IOException;
+import java.util.Random;
 
 public class EsTestDocInsert {
 
@@ -31,6 +32,7 @@ public class EsTestDocInsert {
 
 
         User user = new User();
+        user.setId(new Random(10).nextInt(10000));
         user.setAge(1);
         user.setName("jiang");
         user.setSex("男");
