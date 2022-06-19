@@ -133,3 +133,12 @@ es 面试
  
  请求会穿件一个index 生成segment 并写入到log文件 ，并且每隔1s写入到os cache 如果30分钟到了 或者超了512m 那会会flush 到磁盘
  生成segment 一旦segment多了 会进行segment合并。
+ 
+14. 重要参数
+
+ node.data  ture 是否为索引数据
+ index.number_of_shards 索引分片数量1
+ index.number_of_replicas 1
+ transprort.tcp.conpress  压缩
+ discovery.zen.minimum_master_nodes 选举master参与最少的候选者主节点 默认为1
+ discovery.zen.ping.timeout 3s 集群发现其他的节点ping连接超时时间 默认为3s 网络差 需要加大
