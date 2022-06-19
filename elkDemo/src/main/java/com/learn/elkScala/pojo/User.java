@@ -1,4 +1,4 @@
-package com.learn.elk.pojo;
+package com.learn.elkScala.pojo;
 
 import lombok.Data;
 

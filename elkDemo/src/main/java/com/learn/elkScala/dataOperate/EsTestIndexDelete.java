@@ -1,4 +1,4 @@
-package com.learn.elk;
+package com.learn.elkScala.dataOperate;
 
 
 import org.apache.http.HttpHost;
@@ -7,8 +7,6 @@ import org.elasticsearch.action.support.master.AcknowledgedResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.client.indices.GetIndexRequest;
-import org.elasticsearch.client.indices.GetIndexResponse;
 
 import java.io.IOException;
 

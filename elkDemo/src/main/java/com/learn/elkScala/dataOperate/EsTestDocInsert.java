@@ -1,16 +1,14 @@
-package com.learn.elk;
+package com.learn.elkScala.dataOperate;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.learn.elk.pojo.User;
+import com.learn.elkScala.pojo.User;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.client.indices.GetIndexRequest;
-import org.elasticsearch.client.indices.GetIndexResponse;
 import org.elasticsearch.common.xcontent.XContentType;
 
 import java.io.IOException;
