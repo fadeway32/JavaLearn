@@ -13,6 +13,11 @@
         <module>designPattern</module>
         <module>boolomFilter</module>
         <module>elkDemo</module>
+        <module>elkScala</module>
+        <module>authServer</module>
+        <module>auth-Server</module>
+        <module>AuthServerYa</module>
+        <module>resoure-server</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
